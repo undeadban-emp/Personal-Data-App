@@ -32,13 +32,16 @@
                                             <a href="#step5" data-toggle="tab" aria-controls="step5" role="tab" aria-expanded="false"><span class="round-tab">5</span> <i>Step 5</i></a>
                                         </li>
                                         <li role="presentation" class="tablist">
-                                            <a href="#step6" data-toggle="tab" aria-controls="step6" role="tab" aria-expanded="false"><span class="round-tab">6</span> <i>Step 5</i></a>
+                                            <a href="#step6" data-toggle="tab" aria-controls="step6" role="tab" aria-expanded="false"><span class="round-tab">6</span> <i>Step 6</i></a>
                                         </li>
                                         <li role="presentation" class="tablist">
-                                            <a href="#step7" data-toggle="tab" aria-controls="step7" role="tab" aria-expanded="false"><span class="round-tab">7</span> <i>Step 5</i></a>
+                                            <a href="#step7" data-toggle="tab" aria-controls="step7" role="tab" aria-expanded="false"><span class="round-tab">7</span> <i>Step 7</i></a>
                                         </li>
                                         <li role="presentation" class="tablist">
-                                            <a href="#step8" data-toggle="tab" aria-controls="step8" role="tab" aria-expanded="false"><span class="round-tab">8</span> <i>Step 5</i></a>
+                                            <a href="#step8" data-toggle="tab" aria-controls="step8" role="tab" aria-expanded="false"><span class="round-tab">8</span> <i>Step 8</i></a>
+                                        </li>
+                                        <li role="presentation" class="tablist">
+                                            <a href="#step9" data-toggle="tab" aria-controls="step9" role="tab" aria-expanded="false"><span class="round-tab">9</span> <i>Step 9</i></a>
                                         </li>
                                       </ul>
                                   </div>
@@ -435,7 +438,7 @@
                                            <label>Name of Children(Write full name and list all)</label>
                                             <input class="form-control" type="text" name="mothers_first_name" placeholder="">
                                         </div>
-                                    </div>  
+                                    </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                            <label>Date of Birth </label>
@@ -467,59 +470,59 @@
                                                             <th rowspan="2">Year Graduated</th>
                                                             <th rowspan="2">Scholarship/Academic Honors Received</th>
                                                           </tr>
-                                                             
+
                                                         </thead>
                                                         <tbody>
-                                                         
+
                                                             <tr>
-                                                                <th scope="row">Elementary</th>
-                                                                <td><input type="text"></td>
-                                                                <td><input type="text"></td>
-                                                                <td><input type="date"></td>
-                                                                <td><input type="date"></td>
-                                                                <td><input type="text"></td>
-                                                                <td><input type="text"></td>
-                                                                <td><input type="text"></td>
+                                                                <th>Elementary</th>
+                                                                <td><input class="form-control" type="text"></td>
+                                                                <td><input class="form-control" type="text"></td>
+                                                                <td><input class="form-control" type="date"></td>
+                                                                <td><input class="form-control" type="date"></td>
+                                                                <td><input class="form-control" type="text"></td>
+                                                                <td><input class="form-control" type="text"></td>
+                                                                <td><input class="form-control" type="text"></td>
                                                               </tr>
                                                               <tr>
                                                                 <th scope="row">Secondary</th>
-                                                                <td><input type="text"></td>
-                                                                <td><input type="text"></td>
-                                                                <td><input type="date"></td>
-                                                                <td><input type="date"></td>
-                                                                <td><input type="text"></td>
-                                                                <td><input type="text"></td>
-                                                                <td><input type="text"></td>
+                                                                <td><input class="form-control" type="text"></td>
+                                                                <td><input class="form-control" type="text"></td>
+                                                                <td><input class="form-control" type="date"></td>
+                                                                <td><input class="form-control" type="date"></td>
+                                                                <td><input class="form-control" type="text"></td>
+                                                                <td><input class="form-control" type="text"></td>
+                                                                <td><input class="form-control" type="text"></td>
                                                               </tr>
                                                               <tr>
                                                                 <th scope="row">Vocational/Trade Course</th>
-                                                                <td><input type="text"></td>
-                                                                <td><input type="text"></td>
-                                                                <td><input type="date"></td>
-                                                                <td><input type="date"></td>
-                                                                <td><input type="text"></td>
-                                                                <td><input type="text"></td>
-                                                                <td><input type="text"></td>
+                                                                <td><input class="form-control" type="text"></td>
+                                                                <td><input class="form-control" type="text"></td>
+                                                                <td><input class="form-control" type="date"></td>
+                                                                <td><input class="form-control" type="date"></td>
+                                                                <td><input class="form-control" type="text"></td>
+                                                                <td><input class="form-control" type="text"></td>
+                                                                <td><input class="form-control" type="text"></td>
                                                               </tr>
                                                               <tr>
                                                                 <th scope="row">College</th>
-                                                                <td><input type="text"></td>
-                                                                <td><input type="text"></td>
-                                                                <td><input type="date"></td>
-                                                                <td><input type="date"></td>
-                                                                <td><input type="text"></td>
-                                                                <td><input type="text"></td>
-                                                                <td><input type="text"></td>
+                                                                <td><input class="form-control" type="text"></td>
+                                                                <td><input class="form-control" type="text"></td>
+                                                                <td><input class="form-control" type="date"></td>
+                                                                <td><input class="form-control" type="date"></td>
+                                                                <td><input class="form-control" type="text"></td>
+                                                                <td><input class="form-control" type="text"></td>
+                                                                <td><input class="form-control" type="text"></td>
                                                               </tr>
                                                               <tr>
                                                                 <th scope="row">Graduate Schools</th>
-                                                                <td><input type="text"></td>
-                                                                <td><input type="text"></td>
-                                                                <td><input type="date"></td>
-                                                                <td><input type="date"></td>
-                                                                <td><input type="text"></td>
-                                                                <td><input type="text"></td>
-                                                                <td><input type="text"></td>
+                                                                <td><input class="form-control" type="text"></td>
+                                                                <td><input class="form-control" type="text"></td>
+                                                                <td><input class="form-control" type="date"></td>
+                                                                <td><input class="form-control" type="date"></td>
+                                                                <td><input class="form-control" type="text"></td>
+                                                                <td><input class="form-control" type="text"></td>
+                                                                <td><input class="form-control" type="text"></td>
                                                               </tr>
                                                         </tbody>
                                                       </table>
@@ -538,36 +541,37 @@
 
                                         <div class="tab-pane" role="tabpanel" id="step4">
                                             <h4 class="text-center">Civil Service Eligibility</h4>
-                                            <div class="row">
-                                                <div style="overflow-x:auto;" class="col-md-12">
-                                                    <table  class="table">
-                                                        <thead>
-                                                          <tr>
-                                                            <th rowspan="2">Career Service</th>
-                                                            <th rowspan="2">Rating </th>
-                                                            <th rowspan="2">Date of Examination</th>
-                                                            <th colspan="2">Place of Examination</th>
-                                                            <th rowspan="2">License/th>
-                                                          </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                         
+                                                <div class="row">
+                                                    <div style="overflow-x:auto;" class="col-md-12">
+                                                        <table  class="table">
+                                                            <thead>
                                                             <tr>
-                                                                <th scope="row">Elementary</th>
-                                                                <td><input type="text"></td>
-                                                                <td><input type="text"></td>
-                                                                <td><input type="date"></td>
-                                                                <td><input type="date"></td>
-                                                                <td><input type="text"></td>
-                                                                <td><input type="text"></td>
-                                                                <td><input type="text"></td>
-                                                              </tr>
-                                                        </tbody>
-                                                      </table>
+                                                                <th rowspan="2">Career Service</th>
+                                                                <th rowspan="2">Rating </th>
+                                                                <th rowspan="2">Date of Examination</th>
+                                                                <th colspan="2">Place of Examination</th>
+                                                                <th rowspan="2">License</th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+
+                                                                <tr>
+                                                                    <td><input class="form-control" type="text"></td>
+                                                                    <td><input class="form-control" type="text"></td>
+                                                                    <td><input class="form-control" type="date"></td>
+                                                                    <td><input class="form-control" type="date"></td>
+                                                                    <td><input class="form-control" type="text"></td>
+                                                                    <td><input class="form-control" type="text"></td>
+                                                                    <td><input class="form-control" type="text"></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
                                                 </div>
-                                            </div>
                                             <ul class="list-inline pull-right">
-                                                <li><button type="button" class="default-btn next-step">Continue to next step</button></li>
+                                                <li><button type="button" class="btn btn-secondary default-btn prev-step">Back</button></li>
+                                                <li><button type="button" class="btn btn-warning default-btn next-step skip-btn">Skip</button></li>
+                                                <li><button type="button" class="btn btn-success default-btn next-step">Continue</button></li>
                                             </ul>
                                         </div>
 
@@ -576,56 +580,161 @@
 
 
                                         <div class="tab-pane" role="tabpanel" id="step5">
-                                            <h4 class="text-center">Step 5</h4>
+                                            <h4 class="text-center">Work Experience</h4>
                                             <div class="row">
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label>First and Last Name *</label>
-                                                        <input class="form-control" type="text" name="name" placeholder="">
-                                                    </div>
+                                                <div style="overflow-x:auto;" class="col-md-12">
+                                                    <table  class="table">
+                                                        <thead>
+                                                          <tr>
+                                                            <th colspan="2">Inclusive Dates</th>
+                                                            <th rowspan="2">Position Title </th>
+                                                            <th rowspan="2">Department/Agency/Office</th>
+                                                            <th rowspan="2">Monthly Salary</th>
+                                                            <th rowspan="2">Salary/Job</th>
+                                                            <th rowspan="2">Status of Appointment</th>
+                                                            <th rowspan="2">Gov't Service(Y/N)</th>
+                                                          </tr>
+                                                          <tr>
+                                                             <th>From</th>
+                                                             <th>To</th>
+                                                          </tr>
+                                                        </thead>
+                                                        <tbody>
+
+                                                            <tr>
+                                                                <td><input class="form-control" type="text"></td>
+                                                                <td><input class="form-control" type="text"></td>
+                                                                <td><input class="form-control" type="date"></td>
+                                                                <td><input class="form-control" type="date"></td>
+                                                                <td><input class="form-control" type="text"></td>
+                                                                <td><input class="form-control" type="text"></td>
+                                                                <td><input class="form-control" type="text"></td>
+                                                              </tr>
+                                                        </tbody>
+                                                      </table>
                                                 </div>
                                             </div>
                                             <ul class="list-inline pull-right">
-                                                <li><button type="button" class="default-btn next-step">Continue to next step</button></li>
+                                                <li><button type="button" class="btn btn-secondary default-btn prev-step">Back</button></li>
+                                                <li><button type="button" class="btn btn-warning default-btn next-step skip-btn">Skip</button></li>
+                                                <li><button type="button" class="btn btn-success default-btn next-step">Continue</button></li>
                                             </ul>
                                         </div>
 
 
 
                                         <div class="tab-pane" role="tabpanel" id="step6">
-                                            <h4 class="text-center">Step 6</h4>
+                                            <h4 class="text-center">Voluntary Work or Involvement in Civic / Non government / People / Voluntary Organization</h4>
                                             <div class="row">
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label>dasdasde123213123</label>
-                                                        <input class="form-control" type="text" name="name" placeholder="">
-                                                    </div>
+                                                <div style="overflow-x:auto;" class="col-md-12">
+                                                    <table  class="table">
+                                                        <thead>
+                                                          <tr>
+                                                            <th rowspan="2">Name & Address of Organization</th>
+                                                            <th colspan="2">Inclusive Dates </th>
+                                                            <th rowspan="2">Number of Hours</th>
+                                                            <th rowspan="2">Position/Nature of Work</th>
+                                                          </tr>
+                                                          <tr>
+                                                              <th>From</th>
+                                                              <th>To</th>
+                                                          </tr>
+                                                        </thead>
+                                                        <tbody>
+
+                                                            <tr>
+                                                                <td><input class="form-control" type="text"></td>
+                                                                <td><input class="form-control" type="date"></td>
+                                                                <td><input class="form-control" type="date"></td>
+                                                                <td><input class="form-control" type="text"></td>
+                                                                <td><input class="form-control"  type="text"></td>
+                                                              </tr>
+                                                        </tbody>
+                                                      </table>
                                                 </div>
                                             </div>
                                             <ul class="list-inline pull-right">
-                                                <li><button type="button" class="default-btn next-step">Continue to next step</button></li>
+                                                <li><button type="button" class="btn btn-secondary default-btn prev-step">Back</button></li>
+                                                <li><button type="button" class="btn btn-warning default-btn next-step skip-btn">Skip</button></li>
+                                                <li><button type="button" class="btn btn-success default-btn next-step">Continue</button></li>
                                             </ul>
                                         </div>
 
 
                                         <div class="tab-pane" role="tabpanel" id="step7">
-                                            <h4 class="text-center">Step 7</h4>
+                                            <h4 class="text-center">LEARNING AND DEVELOPMENT (L&D) INTERVENTIONS/TRAINING PROGRAMS ATTENDED</h4>
                                             <div class="row">
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label>dasd12312First and Last Name *</label>
-                                                        <input class="form-control" type="text" name="name" placeholder="">
-                                                    </div>
+                                                <div style="overflow-x:auto;" class="col-md-12">
+                                                    <table  class="table">
+                                                        <thead>
+                                                          <tr>
+                                                            <th rowspan="2">TITLE OF LEARNING AND DEVELOPMENT INTERVENTIONS/TRAINING PROGRAMS</th>
+                                                            <th colspan="2">INCLUSIVE DATES OF ATTENDANCE  </th>
+                                                            <th rowspan="2">Type of LD
+                                                                ( Managerial/ Supervisory/
+                                                               Technical/etc) </th>
+                                                            <th rowspan="2"> CONDUCTED/ SPONSORED </th>
+                                                          </tr>
+                                                          <tr>
+                                                              <th>From</th>
+                                                              <th>To</th>
+                                                          </tr>
+                                                        </thead>
+                                                        <tbody>
+
+                                                            <tr>
+                                                                <td><input class="form-control" type="text"></td>
+                                                                <td><input class="form-control" type="date"></td>
+                                                                <td><input class="form-control" type="date"></td>
+                                                                <td><input class="form-control"  type="text"></td>
+                                                                <td><input class="form-control"  type="text"></td>
+                                                              </tr>
+                                                        </tbody>
+                                                      </table>
                                                 </div>
                                             </div>
                                             <ul class="list-inline pull-right">
-                                                <li><button type="button" class="default-btn next-step">Continue to next step</button></li>
+                                                <li><button type="button" class="btn btn-secondary default-btn prev-step">Back</button></li>
+                                                <li><button type="button" class="btn btn-warning default-btn next-step skip-btn">Skip</button></li>
+                                                <li><button type="button" class="btn btn-success default-btn next-step">Continue</button></li>
                                             </ul>
                                         </div>
 
 
                                         <div class="tab-pane" role="tabpanel" id="step8">
-                                            <h4 class="text-center">Step 8</h4>
+                                            <h4 class="text-center">OTHER INFORMATION</h4>
+                                            <div class="row">
+                                                <div style="overflow-x:auto;" class="col-md-12">
+                                                    <table  class="table">
+                                                        <thead>
+                                                          <tr>
+                                                            <th rowspan="2">SPECIAL SKILLS and HOBBIES</th>
+                                                            <th rowspan="2">NON-ACADEMIC DISTINCTIONS / RECOGNITION    </th>
+                                                            <th rowspan="2"> MEMBERSHIP IN ASSOCIATION/ORGANIZATION</th>
+                                                          </tr>
+                                                        </thead>
+                                                        <tbody>
+
+                                                            <tr>
+                                                                <td><input class="form-control" type="text"></td>
+                                                                <td><input class="form-control" type="text"></td>
+                                                                <td><input class="form-control" type="text"></td>
+                                                              </tr>
+                                                        </tbody>
+                                                      </table>
+                                                </div>
+                                            </div>
+                                            <ul class="list-inline pull-right">
+                                                <li><button type="button" class="btn btn-secondary default-btn prev-step">Back</button></li>
+                                                <li><button type="button" class="btn btn-warning default-btn next-step skip-btn">Skip</button></li>
+                                                <li><button type="button" class="btn btn-success default-btn next-step">Continue</button></li>
+                                            </ul>
+                                        </div>
+
+
+
+                                        <div class="tab-pane" role="tabpanel" id="step9">
+                                            <h4 class="text-center">Step 9</h4>
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <div class="form-group">
