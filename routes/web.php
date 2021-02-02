@@ -33,5 +33,6 @@ Route::get('/test', 'Test\TestController@index');
 
 
 Route::view('/add','add')->name('add');
+Route::get('/add', 'PersonalDataController@addPersonalInfo');
 
 

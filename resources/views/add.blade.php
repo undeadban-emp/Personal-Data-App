@@ -45,11 +45,9 @@
                                         </li>
                                       </ul>
                                   </div>
-                                  <form role="form" action="index.html" class="login-box">
+                                  <form action="" method="post" class="login-box">
+                                      @csrf
                                       <div class="tab-content" id="main_form">
-
-
-
                                           <div class="tab-pane active" role="tabpanel" id="step1">
                                               <h4 class="text-center">Personal Information</h4>
                                               <div class="row">
@@ -109,7 +107,7 @@
                                                 <div class="col-md-3">
                                                     <div class="form-group">
                                                         <label>Height:</label>
-                                                        <select name="civilstatus" id="inputState" class="form-control">
+                                                        <select name="heights" id="inputState" class="form-control">
                                                             <option selected></option>
                                                             <option value="single">4' 6"</option>
                                                             <option value="widowed">4' 7"</option>
@@ -206,43 +204,43 @@
                                                 <div class="col-md-3">
                                                     <div class="form-group">
                                                          <label>House/Block/Lot No.</label>
-                                                        <input class="form-control" type="text" name="house_block_lot_no" placeholder="" required>
+                                                        <input class="form-control" type="text" name="residencial_house_block_lot_no" placeholder="" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-3">
                                                     <div class="form-group">
                                                         <label>Street</label>
-                                                        <input class="form-control" type="text" name="street" placeholder="" required>
+                                                        <input class="form-control" type="text" name="residencial_street" placeholder="" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-3">
                                                     <div class="form-group">
                                                         <label>Subdivision/Village</label>
-                                                        <input class="form-control" type="text" name="subdivision_village" placeholder="" required>
+                                                        <input class="form-control" type="text" name="residencial_subdivision_village" placeholder="" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-3">
                                                     <div class="form-group">
                                                         <label>Barangay</label>
-                                                        <input class="form-control" type="text" name="barangay" placeholder="" required>
+                                                        <input class="form-control" type="text" name="residencial_barangay" placeholder="" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-3">
                                                     <div class="form-group">
                                                         <label>City/Municipality</label>
-                                                        <input class="form-control" type="text" name="city_municipality" placeholder="" required>
+                                                        <input class="form-control" type="text" name="residencial_city_municipality" placeholder="" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-3">
                                                     <div class="form-group">
                                                         <label>Province</label>
-                                                        <input class="form-control" type="text" name="province" placeholder="" required>
+                                                        <input class="form-control" type="text" name="residencial_province" placeholder="" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-3">
                                                     <div class="form-group">
                                                         <label>Zip Code</label>
-                                                        <input class="form-control" type="text" name="zipcode" placeholder="" required>
+                                                        <input class="form-control" type="text" name="residencial_zipcode" placeholder="" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-3">
@@ -253,43 +251,43 @@
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                              <label>House/Block/Lot No.</label>
-                                                            <input class="form-control" type="text" name="house_block_lot_no_perm" placeholder="" required>
+                                                            <input class="form-control" type="text" name="permanent_house_block_lot_no_perm" placeholder="" required>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>Street</label>
-                                                            <input class="form-control" type="text" name="street_perm" placeholder="" required>
+                                                            <input class="form-control" type="text" name="permanent_street_perm" placeholder="" required>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>Subdivision/Village</label>
-                                                            <input class="form-control" type="text" name="subdivision_village_perm" placeholder="" required>
+                                                            <input class="form-control" type="text" name="permanent_subdivision_village_perm" placeholder="" required>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>Barangay</label>
-                                                            <input class="form-control" type="text" name="barangay_perm" placeholder="" required>
+                                                            <input class="form-control" type="text" name="permanent_barangay_perm" placeholder="" required>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>City/Municipality</label>
-                                                            <input class="form-control" type="text" name="city_municipality_perm" placeholder="" required>
+                                                            <input class="form-control" type="text" name="permanent_city_municipality_perm" placeholder="" required>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>Province</label>
-                                                            <input class="form-control" type="text" name="province_perm" placeholder="" required>
+                                                            <input class="form-control" type="text" name="permanent_province_perm" placeholder="" required>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <label>Zip Code</label>
-                                                            <input class="form-control" type="text" name="zipcode_perm" placeholder="" required>
+                                                            <input class="form-control" type="text" name="permanent_zipcode_perm" placeholder="" required>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-3">
@@ -297,30 +295,29 @@
                                                     <div class="col-md-4">
                                                         <div class="form-group">
                                                             <label>Telephone Number</label>
-                                                            <input class="form-control" type="text" name="city_municipality_perm" placeholder="" required>
+                                                            <input class="form-control" type="text" name="telephone_num" placeholder="" required>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="form-group">
                                                             <label>Mobile Number</label>
-                                                            <input class="form-control" type="text" name="province_perm" placeholder="" required>
+                                                            <input class="form-control" type="text" name="mobile_num" placeholder="" required>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="form-group">
                                                             <label>Email Address(if any)</label>
-                                                            <input class="form-control" type="text" name="zipcode_perm" placeholder="" required>
+                                                            <input class="form-control" type="text" name="email_add" placeholder="" required>
                                                         </div>
                                                     </div>
                                               </div>
-                                              <ul class="list-inline pull-right">
+                                              {{-- <ul class="list-inline pull-right">
                                                   <li><button type="button" class="btn btn-success default-btn next-step">Continue to next step</button></li>
-                                              </ul>
+                                              </ul> --}}
+                                              <ul class="list-inline pull-right">
+                                                <li><button type="submit" class="btn btn-success default-btn next-step">Continue to next step</button></li>
+                                            </ul>
                                           </div>
-
-
-
-
                                           <div class="tab-pane" role="tabpanel" id="step2">
                                               <h4 class="text-center">Family Background</h4>
                                               <div class="row">
@@ -330,7 +327,6 @@
                                                       <input class="form-control" type="text" name="spouse_name" placeholder="">
                                                   </div>
                                               </div>
-
                                               <div class="col-md-3">
                                                   <div class="form-group">
                                                       <label>First Name</label>
@@ -383,7 +379,6 @@
                                                 <input class="form-control" type="text" name="fathers_surname" placeholder="">
                                             </div>
                                         </div>
-
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label>First Name</label>
@@ -406,10 +401,6 @@
                                                 </select>
                                           </div>
                                       </div>
-
-
-
-
                                       <div class="col-md-12">
                                             <h5>Mother's Maiden Name:</h5>
                                     </div>
@@ -419,7 +410,6 @@
                                             <input class="form-control" type="text" name="mothers_surname" placeholder="">
                                         </div>
                                     </div>
-
                                     <div class="col-md-4">
                                         <div class="form-group">
                                            <label>First Name</label>
@@ -432,7 +422,6 @@
                                             <input class="form-control" type="text" name="mothers_middle_name" placeholder="">
                                         </div>
                                     </div>
-
                                     <div class="col-md-6">
                                         <div class="form-group">
                                            <label>Name of Children(Write full name and list all)</label>
@@ -452,9 +441,6 @@
                                                   <li><button type="button" class="btn btn-success default-btn next-step">Continue</button></li>
                                               </ul>
                                           </div>
-
-
-
                                           <div class="tab-pane" role="tabpanel" id="step3">
                                             <h4 class="text-center">Educational Background</h4>
                                             <div class="row">
@@ -470,59 +456,61 @@
                                                             <th rowspan="2">Year Graduated</th>
                                                             <th rowspan="2">Scholarship/Academic Honors Received</th>
                                                           </tr>
-
+                                                          <tr>
+                                                              <th>From</th>
+                                                              <th>To</th>
+                                                          </tr>
                                                         </thead>
                                                         <tbody>
-
                                                             <tr>
                                                                 <th>Elementary</th>
-                                                                <td><input class="form-control" type="text"></td>
-                                                                <td><input class="form-control" type="text"></td>
-                                                                <td><input class="form-control" type="date"></td>
-                                                                <td><input class="form-control" type="date"></td>
-                                                                <td><input class="form-control" type="text"></td>
-                                                                <td><input class="form-control" type="text"></td>
-                                                                <td><input class="form-control" type="text"></td>
+                                                                <td><input name="elem_name" class="form-control" type="text"></td>
+                                                                <td><input name="elem_basic_educ" class="form-control" type="text"></td>
+                                                                <td><input name="elem_date_from" class="form-control" type="date"></td>
+                                                                <td><input name="elem_date_to" class="form-control" type="date"></td>
+                                                                <td><input name="elem_level_units" class="form-control" type="text"></td>
+                                                                <td><input name="elem_year_grad" class="form-control" type="text"></td>
+                                                                <td><input name="elem_scholarship" class="form-control" type="text"></td>
                                                               </tr>
                                                               <tr>
                                                                 <th scope="row">Secondary</th>
-                                                                <td><input class="form-control" type="text"></td>
-                                                                <td><input class="form-control" type="text"></td>
-                                                                <td><input class="form-control" type="date"></td>
-                                                                <td><input class="form-control" type="date"></td>
-                                                                <td><input class="form-control" type="text"></td>
-                                                                <td><input class="form-control" type="text"></td>
-                                                                <td><input class="form-control" type="text"></td>
+                                                                <td><input name="secondary_name" class="form-control" type="text"></td>
+                                                                <td><input name="secondary_basic_educ" class="form-control" type="text"></td>
+                                                                <td><input name="secondary_date_from" class="form-control" type="date"></td>
+                                                                <td><input name="secondary_date_to" class="form-control" type="date"></td>
+                                                                <td><input name="secondary_level_units" class="form-control" type="text"></td>
+                                                                <td><input name="secondary_year_grad" class="form-control" type="text"></td>
+                                                                <td><input name="secondary_scholarship" class="form-control" type="text"></td>
                                                               </tr>
                                                               <tr>
                                                                 <th scope="row">Vocational/Trade Course</th>
-                                                                <td><input class="form-control" type="text"></td>
-                                                                <td><input class="form-control" type="text"></td>
-                                                                <td><input class="form-control" type="date"></td>
-                                                                <td><input class="form-control" type="date"></td>
-                                                                <td><input class="form-control" type="text"></td>
-                                                                <td><input class="form-control" type="text"></td>
-                                                                <td><input class="form-control" type="text"></td>
+                                                                <td><input name="vocational_name" class="form-control" type="text"></td>
+                                                                <td><input name="vocational_basic_educ" class="form-control" type="text"></td>
+                                                                <td><input name="vocational_date_from" class="form-control" type="date"></td>
+                                                                <td><input name="vocational_date_to" class="form-control" type="date"></td>
+                                                                <td><input name="vocational_level_units" class="form-control" type="text"></td>
+                                                                <td><input name="vocational_year_grad" class="form-control" type="text"></td>
+                                                                <td><input name="vocational_scholarship" class="form-control" type="text"></td>
                                                               </tr>
                                                               <tr>
                                                                 <th scope="row">College</th>
-                                                                <td><input class="form-control" type="text"></td>
-                                                                <td><input class="form-control" type="text"></td>
-                                                                <td><input class="form-control" type="date"></td>
-                                                                <td><input class="form-control" type="date"></td>
-                                                                <td><input class="form-control" type="text"></td>
-                                                                <td><input class="form-control" type="text"></td>
-                                                                <td><input class="form-control" type="text"></td>
+                                                                <td><input name="college_name" class="form-control" type="text"></td>
+                                                                <td><input name="college_basic_educ" class="form-control" type="text"></td>
+                                                                <td><input name="college_date_from" class="form-control" type="date"></td>
+                                                                <td><input name="college_date_to" class="form-control" type="date"></td>
+                                                                <td><input name="college_level_units" class="form-control" type="text"></td>
+                                                                <td><input name="college_year_grad" class="form-control" type="text"></td>
+                                                                <td><input name="college_scholarship" class="form-control" type="text"></td>
                                                               </tr>
                                                               <tr>
                                                                 <th scope="row">Graduate Schools</th>
-                                                                <td><input class="form-control" type="text"></td>
-                                                                <td><input class="form-control" type="text"></td>
-                                                                <td><input class="form-control" type="date"></td>
-                                                                <td><input class="form-control" type="date"></td>
-                                                                <td><input class="form-control" type="text"></td>
-                                                                <td><input class="form-control" type="text"></td>
-                                                                <td><input class="form-control" type="text"></td>
+                                                                <td><input name="graudate_schools_name" class="form-control" type="text"></td>
+                                                                <td><input name="graudate_schools_basic_educ" class="form-control" type="text"></td>
+                                                                <td><input name="graudate_schools_date_from" class="form-control" type="date"></td>
+                                                                <td><input name="graudate_schools_date_to" class="form-control" type="date"></td>
+                                                                <td><input name="graudate_schools_level_units" class="form-control" type="text"></td>
+                                                                <td><input name="graudate_schools_year_grad" class="form-control" type="text"></td>
+                                                                <td><input name="graudate_schools_scholarship" class="form-control" type="text"></td>
                                                               </tr>
                                                         </tbody>
                                                       </table>
@@ -534,11 +522,6 @@
                                                 <li><button type="button" class="btn btn-success default-btn next-step">Continue</button></li>
                                             </ul>
                                         </div>
-
-
-
-
-
                                         <div class="tab-pane" role="tabpanel" id="step4">
                                             <h4 class="text-center">Civil Service Eligibility</h4>
                                                 <div class="row">
@@ -549,20 +532,22 @@
                                                                 <th rowspan="2">Career Service</th>
                                                                 <th rowspan="2">Rating </th>
                                                                 <th rowspan="2">Date of Examination</th>
-                                                                <th colspan="2">Place of Examination</th>
-                                                                <th rowspan="2">License</th>
+                                                                <th rowspan="2">Place of Examination</th>
+                                                                <th colspan="2">License</th>
                                                             </tr>
+                                                        <tr>
+                                                            <th>Number</th>
+                                                            <th>Date of Validity</th>
+                                                        </tr>
                                                             </thead>
                                                             <tbody>
-
                                                                 <tr>
-                                                                    <td><input class="form-control" type="text"></td>
-                                                                    <td><input class="form-control" type="text"></td>
-                                                                    <td><input class="form-control" type="date"></td>
-                                                                    <td><input class="form-control" type="date"></td>
-                                                                    <td><input class="form-control" type="text"></td>
-                                                                    <td><input class="form-control" type="text"></td>
-                                                                    <td><input class="form-control" type="text"></td>
+                                                                    <td><input name="cse_career_service" class="form-control" type="text"></td>
+                                                                    <td><input name="cse_rating" class="form-control" type="text"></td>
+                                                                    <td><input name="cse_date_examination" class="form-control" type="date"></td>
+                                                                    <td><input name="cse_place_examination" class="form-control" type="date"></td>
+                                                                    <td><input name="cse_license_number" class="form-control" type="text"></td>
+                                                                    <td><input name="cse_license_validity" class="form-control" type="text"></td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -574,11 +559,6 @@
                                                 <li><button type="button" class="btn btn-success default-btn next-step">Continue</button></li>
                                             </ul>
                                         </div>
-
-
-
-
-
                                         <div class="tab-pane" role="tabpanel" id="step5">
                                             <h4 class="text-center">Work Experience</h4>
                                             <div class="row">
@@ -600,15 +580,15 @@
                                                           </tr>
                                                         </thead>
                                                         <tbody>
-
                                                             <tr>
-                                                                <td><input class="form-control" type="text"></td>
-                                                                <td><input class="form-control" type="text"></td>
-                                                                <td><input class="form-control" type="date"></td>
-                                                                <td><input class="form-control" type="date"></td>
-                                                                <td><input class="form-control" type="text"></td>
-                                                                <td><input class="form-control" type="text"></td>
-                                                                <td><input class="form-control" type="text"></td>
+                                                                <td><input name="work_date_from" class="form-control" type="date"></td>
+                                                                <td><input name="work_date_to" class="form-control" type="date"></td>
+                                                                <td><input name="work_position_title" class="form-control" type="text"></td>
+                                                                <td><input name="work_department" class="form-control" type="text"></td>
+                                                                <td><input name="work_monthly_salary" class="form-control" type="text"></td>
+                                                                <td><input name="work_salary_job" class="form-control" type="text"></td>
+                                                                <td><input name="work_status_appoinment" class="form-control" type="text"></td>
+                                                                <td><input name="work_gov_service" class="form-control" type="text"></td>
                                                               </tr>
                                                         </tbody>
                                                       </table>
@@ -620,9 +600,6 @@
                                                 <li><button type="button" class="btn btn-success default-btn next-step">Continue</button></li>
                                             </ul>
                                         </div>
-
-
-
                                         <div class="tab-pane" role="tabpanel" id="step6">
                                             <h4 class="text-center">Voluntary Work or Involvement in Civic / Non government / People / Voluntary Organization</h4>
                                             <div class="row">
@@ -641,13 +618,12 @@
                                                           </tr>
                                                         </thead>
                                                         <tbody>
-
                                                             <tr>
-                                                                <td><input class="form-control" type="text"></td>
-                                                                <td><input class="form-control" type="date"></td>
-                                                                <td><input class="form-control" type="date"></td>
-                                                                <td><input class="form-control" type="text"></td>
-                                                                <td><input class="form-control"  type="text"></td>
+                                                                <td><input name="voluntary_name_org" class="form-control" type="text"></td>
+                                                                <td><input name="voluntary_dates_to" class="form-control" type="date"></td>
+                                                                <td><input name="voluntary_dates_from" class="form-control" type="date"></td>
+                                                                <td><input name="voluntary_number_hours" class="form-control" type="text"></td>
+                                                                <td><input name="voluntary_position_work" class="form-control"  type="text"></td>
                                                               </tr>
                                                         </tbody>
                                                       </table>
@@ -659,8 +635,6 @@
                                                 <li><button type="button" class="btn btn-success default-btn next-step">Continue</button></li>
                                             </ul>
                                         </div>
-
-
                                         <div class="tab-pane" role="tabpanel" id="step7">
                                             <h4 class="text-center">LEARNING AND DEVELOPMENT (L&D) INTERVENTIONS/TRAINING PROGRAMS ATTENDED</h4>
                                             <div class="row">
@@ -681,13 +655,12 @@
                                                           </tr>
                                                         </thead>
                                                         <tbody>
-
                                                             <tr>
-                                                                <td><input class="form-control" type="text"></td>
-                                                                <td><input class="form-control" type="date"></td>
-                                                                <td><input class="form-control" type="date"></td>
-                                                                <td><input class="form-control"  type="text"></td>
-                                                                <td><input class="form-control"  type="text"></td>
+                                                                <td><input name="learning_title_of_learning" class="form-control" type="text"></td>
+                                                                <td><input name="learning_dates_from" class="form-control" type="date"></td>
+                                                                <td><input name="learning_dates_to" class="form-control" type="date"></td>
+                                                                <td><input name="learning_type" class="form-control"  type="text"></td>
+                                                                <td><input name="learning_conducted" class="form-control"  type="text"></td>
                                                               </tr>
                                                         </tbody>
                                                       </table>
@@ -699,8 +672,6 @@
                                                 <li><button type="button" class="btn btn-success default-btn next-step">Continue</button></li>
                                             </ul>
                                         </div>
-
-
                                         <div class="tab-pane" role="tabpanel" id="step8">
                                             <h4 class="text-center">OTHER INFORMATION</h4>
                                             <div class="row">
@@ -714,11 +685,10 @@
                                                           </tr>
                                                         </thead>
                                                         <tbody>
-
                                                             <tr>
-                                                                <td><input class="form-control" type="text"></td>
-                                                                <td><input class="form-control" type="text"></td>
-                                                                <td><input class="form-control" type="text"></td>
+                                                                <td><input name="other_info_special_skills" class="form-control" type="text"></td>
+                                                                <td><input name="other_info_non_academic" class="form-control" type="text"></td>
+                                                                <td><input name="other_info_membership" class="form-control" type="text"></td>
                                                               </tr>
                                                         </tbody>
                                                       </table>
@@ -730,26 +700,212 @@
                                                 <li><button type="button" class="btn btn-success default-btn next-step">Continue</button></li>
                                             </ul>
                                         </div>
-
-
-
                                         <div class="tab-pane" role="tabpanel" id="step9">
-                                            <h4 class="text-center">Step 9</h4>
+                                            <h4 class="text-center">Other Information</h4>
                                             <div class="row">
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label>dasdasdaFirst and Last Name *</label>
-                                                        <input class="form-control" type="text" name="name" placeholder="">
-                                                    </div>
+                                                <div class="col-md-12 border border-primary p-2 text-justify" >
+                                                    <p>Are you related by consanguinity or affinity to the appointing or recommending authority, or to the chief of bureau or office or to the person who has immediate supervision over you in the Office, Bureau or Department where you will be apppointed,<br></p>
+
+                                                    <p><b>a. within the third degree?</b>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                        <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                      </div>
+                                                      <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                        <label class="form-check-label" for="inlineRadio2">No</label>
+                                                      </div><br>
+                                                    </p>
+                                                    <p>
+                                                        <b>b.  within the fourth degree (for Local Government Unit - Career Employees)?</b><br>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                        <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                      </div>
+                                                      <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                        <label class="form-check-label" for="inlineRadio2">No</label>
+                                                      </div><br><br>
+                                                      <div class="form-check form-check-inline">
+                                                       <p>If Yes, give details:
+                                                        <input type="text" class="form-control">
+                                                       </p>
+                                                      </div>
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-12 border border-primary p-2 text-justify" >
+                                                    <p><b>a. Have you ever been found guilty of any administrative offense?</b><br>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                        <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                      </div>
+                                                      <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                        <label class="form-check-label" for="inlineRadio2">No</label>
+                                                      </div><br>
+                                                    </p>
+                                                    <div class="form-check form-check-inline">
+                                                        <p>If Yes, give details:
+                                                         <input type="text" class="form-control">
+                                                        </p>
+                                                       </div>
+                                                    <p>
+                                                      <b> B. Have you been criminally charged before any court?</b><br>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                        <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                      </div>
+                                                      <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                        <label class="form-check-label" for="inlineRadio2">No</label>
+                                                      </div><br>
+                                                    </p>
+                                                    <div class="form-check form-check-inline">
+                                                        <p>If Yes, give details:</p>
+                                                       </div><br>
+                                                       <div class="form-check form-check-inline">
+                                                       <p>Date filed:<input type="text" class="form-control"><br></p>
+                                                       </div><br>
+                                                       <div class="form-check form-check-inline">
+                                                        <p>Status of Cases:<input type="text" class="form-control"><br></p>
+                                                        </div>
+                                                </div>
+                                                <div class="col-md-12 border border-primary p-2 text-justify" >
+                                                    <p><b>Have you ever been convicted of any crime or violation of any law, decree, ordinance or regulation by any court or tribunal?</b><br>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                        <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                      </div>
+                                                      <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                        <label class="form-check-label" for="inlineRadio2">No</label>
+                                                      </div><br>
+                                                    </p>
+                                                    <div class="form-check form-check-inline">
+                                                        <p>If Yes, give details:
+                                                         <input type="text" class="form-control">
+                                                        </p>
+                                                       </div>
+                                                </div>
+                                                <div class="col-md-12 border border-primary p-2 text-justify" >
+                                                    <p><b>Have you ever been separated from the service in any of the following modes: resignation, retirement, dropped from the rolls, dismissal, termination, end of term, finished contract or phased out (abolition) in the public or private sector?</b><br>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                        <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                      </div>
+                                                      <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                        <label class="form-check-label" for="inlineRadio2">No</label>
+                                                      </div><br>
+                                                      <div class="form-check form-check-inline">
+                                                        <p>If Yes, give details:
+                                                         <input type="text" class="form-control">
+                                                        </p>
+                                                       </div>
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-12 border border-primary p-2 text-justify" >
+                                                    <p><b>a. Have you ever been a candidate in a national or local election held within the last year (except Barangay election)?</b><br>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                        <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                      </div>
+                                                      <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                        <label class="form-check-label" for="inlineRadio2">No</label>
+                                                      </div><br>
+                                                      <div class="form-check form-check-inline">
+                                                        <p>If Yes, give details:
+                                                         <input type="text" class="form-control">
+                                                        </p>
+                                                       </div>
+                                                    </p>
+                                                    <p><b>b. Have you resigned from the government service during the three (3)-month period before the last election to promote/actively campaign for a national or local candidate?</b><br>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                            <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                          </div>
+                                                          <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                            <label class="form-check-label" for="inlineRadio2">No</label>
+                                                          </div><br>
+                                                        </p>
+                                                    <div class="form-check form-check-inline">
+                                                        <p>If Yes, give details:
+                                                         <input type="text" class="form-control">
+                                                        </p>
+                                                       </div>
+                                                </div>
+                                                <div class="col-md-12 border border-primary p-2 text-justify" >
+                                                    <p><b>Have you acquired the status of an immigrant or permanent resident of another country?</b><br>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                        <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                      </div>
+                                                      <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                        <label class="form-check-label" for="inlineRadio2">No</label>
+                                                      </div><br>
+                                                    </p>
+                                                    <div class="form-check form-check-inline">
+                                                        <p>If Yes, give details:
+                                                         <input type="text" class="form-control">
+                                                        </p>
+                                                       </div>
+                                                </div>
+                                                <div class="col-md-12 border border-primary p-2 text-justify" >
+                                                    <p>Pursuant to: (a) Indigenous People's Act (RA 8371); (b) Magna Carta for Disabled Persons (RA 7277); and (c) Solo Parents Welfare Act of 2000 (RA 8972), please answer the following items:</p>
+                                                    <p><b>A. Are you a member of any indigenous group?</b><br>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                        <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                      </div>
+                                                      <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                        <label class="form-check-label" for="inlineRadio2">No</label>
+                                                      </div><br>
+                                                      <div class="form-check form-check-inline">
+                                                        <p>If Yes, give details:
+                                                         <input type="text" class="form-control">
+                                                        </p>
+                                                       </div>
+                                                    </p>
+                                                    <p><b>B. Are you a person with disability?</b><br>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                            <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                          </div>
+                                                          <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                            <label class="form-check-label" for="inlineRadio2">No</label>
+                                                          </div><br>
+                                                          <div class="form-check form-check-inline">
+                                                            <p>If Yes, give details:
+                                                             <input type="text" class="form-control">
+                                                            </p>
+                                                           </div>
+                                                        </p>
+                                                        <p><b>C. Are you a solo parent?</b><br>
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                                <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                              </div>
+                                                              <div class="form-check form-check-inline">
+                                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                                <label class="form-check-label" for="inlineRadio2">No</label>
+                                                              </div><br>
+                                                               <div class="form-check form-check-inline">
+                                                        <p>If Yes, give details:
+                                                         <input type="text" class="form-control">
+                                                        </p>
+                                                       </div>
+                                                            </p>
                                                 </div>
                                             </div>
                                             <ul class="list-inline pull-right">
-                                                <li><button type="button" class="default-btn next-step">Continue to next step</button></li>
+                                                <li><button type="button" class=" default-btn btn btn-success">Save</button></li>
                                             </ul>
                                         </div>
-
-
-
                                           <div class="clearfix"></div>
                                       </div>
                                   </form>
