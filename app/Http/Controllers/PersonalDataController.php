@@ -6,11 +6,66 @@ use Illuminate\Http\Request;
 use App\Person;
 use App\Child;
 use Auth;
+use App\Http\Requests\PersonRequest;
 
 class PersonalDataController extends Controller
 {
-    function addPersonalInfo(Request $req)
+    function addPersonalInfo(PersonRequest $req)
     {
+        $validated = $req->validated();
+        //pwede da ine na validation pero mas dayaw kun mag gamit ng kaugalinon na validation type php artisan make:request nameofrequest
+        // $this->validate($req,[
+        //     'firstname' => 'required',
+        //     'lastname' => 'required',
+        //     'birthofdate' => 'required',
+        //     'placeofbirth' => 'required',
+        //     'sex' => 'required',
+        //     'civilstatus' => 'required',
+        //     'heights' => 'required',
+        //     'weight' => 'required',
+        //     'bloodtype' => 'required',
+        //     'gsisidno' => 'required',
+        //     'Pagibig' => 'required',
+        //     'philhealthno' => 'required',
+        //     'sssno' => 'required',
+        //     'tinno' => 'required',
+        //     'agencyemployeeno' => 'required',
+        //     'residencial_house_block_lot_no' => 'required',
+        //     'residencial_street' => 'required',
+        //     'residencial_subdivision_village' => 'required',
+        //     'residencial_barangay' => 'required',
+        //     'residencial_city_municipality' => 'required',
+        //     'residencial_province' => 'required',
+        //     'residencial_zipcode' => 'required',
+        //     'permanent_house_block_lot_no_perm' => 'required',
+        //     'permanent_street_perm' => 'required',
+        //     'permanent_subdivision_village_perm' => 'required',
+        //     'permanent_barangay_perm' => 'required',
+        //     'permanent_city_municipality_perm' => 'required',
+        //     'permanent_province_perm' => 'required',
+        //     'permanent_zipcode_perm' => 'required',
+        //     'telephone_num' => 'required',
+        //     'mobile_num' => 'required',
+        //     'email_add' => 'required',
+        //     'spouse_name' => 'required',
+        //     'spouse_first_name' => 'required',
+        //     'spouse_middle_name' => 'required',
+        //     'spouse_name_extension' => 'required',
+        //     'spouse_occupation' => 'required',
+        //     'spouse_employeer_business_name' => 'required',
+        //     'spouse_business_address' => 'required',
+        //     'spouse_telephone_no' => 'required',
+        //     'fathers_surname' => 'required',
+        //     'father_first_name' => 'required',
+        //     'father_middle_name' => 'required',
+        //     'father_name_extension' => 'required',
+        //     'mothers_surname' => 'required',
+        //     'mothers_first_name' => 'required',
+        //     'mothers_middle_name' => 'required',
+        //     'children_name' => 'required',
+        //     'children_date_of_birth' => 'required'
+        // ]);
+        //person
         $person = new Person;
         $person->firstname=$req['firstname'];
         $person->lastname=$req['lastname'];
@@ -60,7 +115,7 @@ class PersonalDataController extends Controller
         $person->mothers_first_name=$req['mothers_first_name'];
         $person->mothers_middle_name=$req['mothers_middle_name'];
         $person->save();
-        
+        //children
         $children = new Child;
         $children->children_name=$req['children_name'];
         $children->children_date_of_birth=$req['children_date_of_birth'];
