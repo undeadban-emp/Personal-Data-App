@@ -12,7 +12,6 @@ class PersonalDataController extends Controller
     function addPersonalInfo(Request $req)
     {
         $person = new Person;
-        $children = new Child;
         $person->firstname=$req['firstname'];
         $person->lastname=$req['lastname'];
         $person->birthofdate=$req['birthofdate'];
@@ -60,15 +59,17 @@ class PersonalDataController extends Controller
         $person->mothers_surname=$req['mothers_surname'];
         $person->mothers_first_name=$req['mothers_first_name'];
         $person->mothers_middle_name=$req['mothers_middle_name'];
-
+        $person->save();
+        
+        $children = new Child;
         $children->children_name=$req['children_name'];
         $children->children_date_of_birth=$req['children_date_of_birth'];
+        //save the id of the main table to the branch table
+        // $person->child()->save($children);//pwede sb ine na method
+        //pwede sb ine na method
+        $children->person()->associate($person);
         $children->save();
-        $person->save();
+       
         return redirect('/add')->with('success',"Added Successfully");
     }
-
-
-
-
 }
