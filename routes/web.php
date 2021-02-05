@@ -33,6 +33,6 @@ Route::get('/test', 'Test\TestController@index');
 
 
 Route::view('/add','add')->name('add');
-Route::get('/add', 'PersonalDataController@addPersonalInfo');
+Route::post('/add', 'PersonalDataController@addPersonalInfo');
 
 

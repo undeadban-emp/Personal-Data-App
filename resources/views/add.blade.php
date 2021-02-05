@@ -45,7 +45,7 @@
                                         </li>
                                       </ul>
                                   </div>
-                                  <form action="" method="post" class="login-box">
+                                  <form action="/add" method="post" class="login-box">
                                       @csrf
                                       <div class="tab-content" id="main_form">
                                           <div class="tab-pane active" role="tabpanel" id="step1">
@@ -311,12 +311,10 @@
                                                         </div>
                                                     </div>
                                               </div>
-                                              {{-- <ul class="list-inline pull-right">
-                                                  <li><button type="button" class="btn btn-success default-btn next-step">Continue to next step</button></li>
-                                              </ul> --}}
                                               <ul class="list-inline pull-right">
-                                                <li><button type="submit" class="btn btn-success default-btn next-step">Continue to next step</button></li>
-                                            </ul>
+                                                  <li><button type="button" class="btn btn-success default-btn next-step">Continue to next step</button></li>
+                                              </ul>
+
                                           </div>
                                           <div class="tab-pane" role="tabpanel" id="step2">
                                               <h4 class="text-center">Family Background</h4>
@@ -330,19 +328,19 @@
                                               <div class="col-md-3">
                                                   <div class="form-group">
                                                       <label>First Name</label>
-                                                      <input class="form-control" type="text" name="first_name" placeholder="">
+                                                      <input class="form-control" type="text" name="spouse_first_name" placeholder="">
                                                   </div>
                                               </div>
                                               <div class="col-md-3">
                                                   <div class="form-group">
                                                       <label>Middle Name</label>
-                                                      <input class="form-control" type="text" name="middle_name" placeholder="">
+                                                      <input class="form-control" type="text" name="spouse_middle_name" placeholder="">
                                                   </div>
                                               </div>
                                               <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label>Name Extension</label>
-                                                    <select name="name_extension" id="name_extension" class="form-control">
+                                                    <select name="spouse_name_extension" id="spouse_name_extension" class="form-control">
                                                         <option selected></option>
                                                         <option value="single">Jr.</option>
                                                         <option value="widowed">Sr.</option>
@@ -352,25 +350,25 @@
                                               <div class="col-md-6">
                                                   <div class="form-group">
                                                       <label>Occupation</label>
-                                                      <input class="form-control" type="text" name="occupation" placeholder="">
+                                                      <input class="form-control" type="text" name="spouse_occupation" placeholder="">
                                                   </div>
                                               </div>
                                               <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label>Employeer/Business Name</label>
-                                                    <input class="form-control" type="text" name="employeer_business_name" placeholder="">
+                                                    <input class="form-control" type="text" name="spouse_employeer_business_name" placeholder="">
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label>Business Address</label>
-                                                    <input class="form-control" type="text" name="occupation" placeholder="">
+                                                    <input class="form-control" type="text" name="spouse_business_address" placeholder="">
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                               <div class="form-group">
                                                   <label>Telephone Number</label>
-                                                  <input class="form-control" type="text" name="employeer_business_name" placeholder="">
+                                                  <input class="form-control" type="text" name="spouse_telephone_no" placeholder="">
                                               </div>
                                           </div>
                                           <div class="col-md-3">
@@ -394,7 +392,7 @@
                                         <div class="col-md-3">
                                           <div class="form-group">
                                               <label>Name Extension</label>
-                                              <select name="name_extension" id="father_name_extension" class="form-control">
+                                              <select name="father_name_extension" id="father_name_extension" class="form-control">
                                                   <option selected></option>
                                                   <option value="single">Jr.</option>
                                                   <option value="widowed">Sr.</option>
@@ -425,21 +423,24 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                            <label>Name of Children(Write full name and list all)</label>
-                                            <input class="form-control" type="text" name="mothers_first_name" placeholder="">
+                                            <input class="form-control" type="text" name="children_name" placeholder="">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                            <label>Date of Birth </label>
-                                            <input class="form-control" type="text" name="mothers_first_name" placeholder="">
+                                            <input class="form-control" type="date" name="children_date_of_birth" placeholder="">
                                         </div>
                                     </div>
                                              </div>
-                                              <ul class="list-inline pull-right">
+                                             <ul class="list-inline pull-right">
+                                                <li><button type="submit" class="btn btn-success">add</button></li>
+                                            </ul>
+                                              {{-- <ul class="list-inline pull-right">
                                                   <li><button type="button" class="btn btn-secondary default-btn prev-step">Back</button></li>
                                                   <li><button type="button" class="btn btn-warning default-btn next-step skip-btn">Skip</button></li>
                                                   <li><button type="button" class="btn btn-success default-btn next-step">Continue</button></li>
-                                              </ul>
+                                              </ul> --}}
                                           </div>
                                           <div class="tab-pane" role="tabpanel" id="step3">
                                             <h4 class="text-center">Educational Background</h4>
